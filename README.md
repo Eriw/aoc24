@@ -1,6 +1,6 @@
 # Advent of Code 2024 Framework
 
-A Python framework for solving Advent of Code 2024 puzzles efficiently.
+A Python framework for solving Advent of Code 2024 puzzles.
 
 ## Setup
 
@@ -25,13 +25,15 @@ python3 cli.py new <day>
 ```
 For example: `python3 cli.py new 1` will create:
 - A solution file at `solutions/day01.py`
+- A test file at `tests/test_day01.py`
 - An empty input file at `inputs/day01.txt`
 
 ### Working on Solutions
 
 1. Paste your puzzle input into the corresponding input file in `inputs/`
 2. Edit the solution file in `solutions/`
-3. Run your solution:
+3. Update the test file with example input and expected results
+4. Run your solution:
 ```bash
 python3 solutions/day01.py
 ```
