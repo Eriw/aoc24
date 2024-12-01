@@ -10,14 +10,9 @@ git clone https://github.com/Eriw/aoc24.git
 cd aoc24
 ```
 
-2. Install the package in development mode:
+2. Install dependencies:
 ```bash
-python3 -m pip install -e .
-```
-
-3. Install test dependencies:
-```bash
-python3 -m pip install pytest
+python3 -m pip install -r requirements.txt
 ```
 
 ## Usage
@@ -26,9 +21,9 @@ python3 -m pip install pytest
 
 To create a new solution file for a day:
 ```bash
-python3 -m cli new <day>
+python3 cli.py new <day>
 ```
-For example: `python3 -m cli new 1` will create:
+For example: `python3 cli.py new 1` will create:
 - A solution file at `solutions/day01.py`
 - An empty input file at `inputs/day01.txt`
 
@@ -38,14 +33,14 @@ For example: `python3 -m cli new 1` will create:
 2. Edit the solution file in `solutions/`
 3. Run your solution:
 ```bash
-PYTHONPATH=/path/to/aoc24 python3 -m solutions.day01
+python3 solutions/day01.py
 ```
 
 ### Running Tests
 
 To run tests for a specific day:
 ```bash
-PYTHONPATH=/path/to/aoc24 python3 -m pytest tests/test_day01.py -v
+python3 -m pytest tests/test_day01.py -v
 ```
 
 ## Features

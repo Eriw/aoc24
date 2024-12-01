@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add parent directory to Python path for imports
+sys.path.append(str(Path(__file__).parent.parent))
+
 from utils.input import read_input_lines
 from collections import Counter
 
@@ -52,7 +58,7 @@ def solve_part2(data):
 
 def main():
     # Get the day number from the filename
-    day = int(__file__.split('day')[-1][:2])
+    day = int(Path(__file__).stem.split('day')[-1])
     
     # Read and parse input
     lines = read_input_lines(day)

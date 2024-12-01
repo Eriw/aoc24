@@ -1,0 +1,5 @@
+requests>=2.31.0  # For downloading input files
+numpy>=1.24.0    # For matrix operations
+networkx>=3.2.1  # For graph problems
+parse>=1.20.0    # For parsing input strings
+pytest>=7.4.0    # For running tests 
