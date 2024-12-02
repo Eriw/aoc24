@@ -20,7 +20,7 @@ def create_day(day: int):
     print(f"Created solution file for day {day}")
 
     # Create test file
-    test_template_path = Path(__file__).parent / "templates" / "test_template.py"
+    test_template_path = Path(__file__).parent / "templates" / "test_template.txt"
     test_path = Path(__file__).parent / "tests" / f"test_day{day:02d}.py"
     
     if test_template_path.exists():
