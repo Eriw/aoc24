@@ -1,21 +1,44 @@
-from utils.input import read_input, read_input_lines, read_input_integers, extract_numbers
-from utils.algorithms import manhattan_distance, bfs, dijkstra
+import sys
+from pathlib import Path
+
+# Add parent directory to Python path for imports
+sys.path.append(str(Path(__file__).parent.parent))
+
+from utils.input import read_input_lines
 
 def parse_input(lines):
-    """Parse the input data."""
+    """Parse the input data into appropriate data structure."""
+    # Example:
+    # return [[int(x) for x in line.split()] for line in lines]
     return lines
 
 def solve_part1(data):
-    """Solve part 1 of the puzzle."""
+    """
+    Solve part 1 of the puzzle.
+    
+    Args:
+        data: Parsed input data
+    
+    Returns:
+        Solution to part 1
+    """
     pass
 
 def solve_part2(data):
-    """Solve part 2 of the puzzle."""
-    pass
+    """
+    Solve part 2 of the puzzle.
+    
+    Args:
+        data: Parsed input data
+    
+    Returns:
+        Solution to part 2
+    """
+    return 0  # Update when part 2 is available
 
 def main():
     # Get the day number from the filename
-    day = int(__file__.split('day')[-1][:2])
+    day = int(Path(__file__).stem.split('day')[-1])
     
     # Read and parse input
     lines = read_input_lines(day)
